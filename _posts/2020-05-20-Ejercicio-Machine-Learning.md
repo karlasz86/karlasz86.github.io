@@ -773,7 +773,8 @@ train_wines[wine_features].plot(kind="box",
 
 
 
-![png](Ejercicio%20machine%20learning%20%28clasificaci%C3%B3n%20y%20regresi%C3%B3n%29_files/Ejercicio%20machine%20learning%20%28clasificaci%C3%B3n%20y%20regresi%C3%B3n%29_17_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Ejercicio machine learning (clasificación y regresión)_files/Ejercicio machine learning (clasificación y regresión)_17_1.png">
+
 
 
 En esta gráfica boxplot podemos apreciar que tenemos muy pocos outliers y que las variables tienen una buena distribución en sus cuantiles, pero vamos a ver qué tan relacionadas están unas variables con otras
@@ -796,8 +797,8 @@ sns.pairplot(train_wines, hue="color", height=4, diag_kind='hist')
 
 
 
-![png](Ejercicio%20machine%20learning%20%28clasificaci%C3%B3n%20y%20regresi%C3%B3n%29_files/Ejercicio%20machine%20learning%20%28clasificaci%C3%B3n%20y%20regresi%C3%B3n%29_20_1.png)
 
+<img src="{{ site.url }}{{ site.baseurl }}/images/Ejercicio machine learning (clasificación y regresión)_files/Ejercicio machine learning (clasificación y regresión)_20_1.png">
 
 Al ser tantas variables es complicado ver la correlación de las variables en este tipo de gráfico, así que probaremos con las correlaciones
 
@@ -1047,8 +1048,8 @@ with sns.axes_style("white"):
 ```
 
 
-![png](Ejercicio%20machine%20learning%20%28clasificaci%C3%B3n%20y%20regresi%C3%B3n%29_files/Ejercicio%20machine%20learning%20%28clasificaci%C3%B3n%20y%20regresi%C3%B3n%29_24_0.png)
 
+<img src="{{ site.url }}{{ site.baseurl }}/images/Ejercicio machine learning (clasificación y regresión)_files/Ejercicio machine learning (clasificación y regresión)_24_0.png">
 
 # 3. Modelos de clasificación
 
@@ -2796,7 +2797,8 @@ pass
 ```
 
 
-![png](Ejercicio%20machine%20learning%20%28clasificaci%C3%B3n%20y%20regresi%C3%B3n%29_files/Ejercicio%20machine%20learning%20%28clasificaci%C3%B3n%20y%20regresi%C3%B3n%29_68_0.png)
+
+<img src="{{ site.url }}{{ site.baseurl }}/images/Ejercicio machine learning (clasificación y regresión)_files/Ejercicio machine learning (clasificación y regresión)_68_0.png">
 
 
 ## 4.3. Curva ROC
@@ -2819,8 +2821,7 @@ visualizer.show()                       # Finalize and show the figure
     
 
 
-![png](Ejercicio%20machine%20learning%20%28clasificaci%C3%B3n%20y%20regresi%C3%B3n%29_files/Ejercicio%20machine%20learning%20%28clasificaci%C3%B3n%20y%20regresi%C3%B3n%29_70_1.png)
-
+<img src="{{ site.url }}{{ site.baseurl }}/images/Ejercicio machine learning (clasificación y regresión)_files/Ejercicio machine learning (clasificación y regresión)_70_1.png">
 
 
 
@@ -3471,8 +3472,8 @@ with sns.axes_style("white"):
 ```
 
 
-![png](Ejercicio%20machine%20learning%20%28clasificaci%C3%B3n%20y%20regresi%C3%B3n%29_files/Ejercicio%20machine%20learning%20%28clasificaci%C3%B3n%20y%20regresi%C3%B3n%29_85_0.png)
 
+<img src="{{ site.url }}{{ site.baseurl }}/images/Ejercicio machine learning (clasificación y regresión)_files/Ejercicio machine learning (clasificación y regresión)_85_0.png">
 
 
 ```python
@@ -4424,8 +4425,7 @@ visualizer.score(test_wine_quality[wine_features_quality], test_wine_quality["qu
 visualizer.show()   
 ```
 
-
-![png](Ejercicio%20machine%20learning%20%28clasificaci%C3%B3n%20y%20regresi%C3%B3n%29_files/Ejercicio%20machine%20learning%20%28clasificaci%C3%B3n%20y%20regresi%C3%B3n%29_124_0.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Ejercicio machine learning (clasificación y regresión)_files/Ejercicio machine learning (clasificación y regresión)_124_0.png">
 
 
 
@@ -4512,7 +4512,7 @@ plt.show()
 ```
 
 
-![png](Ejercicio%20machine%20learning%20%28clasificaci%C3%B3n%20y%20regresi%C3%B3n%29_files/Ejercicio%20machine%20learning%20%28clasificaci%C3%B3n%20y%20regresi%C3%B3n%29_128_0.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Ejercicio machine learning (clasificación y regresión)_files/Ejercicio machine learning (clasificación y regresión)_128_0.png">
 
 
 Finalmente, ya para la comprobación final, evaluamos la performance del algoritmo, no solo con el MSE, sino también con otras métricas como MAE y RMSE
