@@ -1,13 +1,15 @@
-# Ejercicio de machine learning: clasificación y regresión vinícola
 ---
-title: "Ejercicio de machine learning: clasificación y regresión vinícola"
-date: 2020-05-20
+title: "Ejercicio de Machine Learning"
+date: 2018-01-28
 tags: [data wrangling, data science, messy data]
 header:
   image: "/images/perceptron/percept.jpg"
 excerpt: "Data Wrangling, Data Science, Messy Data"
 mathjax: "true"
 ---
+
+
+# Ejercicio de machine learning: clasificación y regresión vinícola
 En este ejercicio (mucho menos guiado que los anteriores) vas a tener dos objetivos. Para ello, utilizarás un dataset sobre distintos vinos con sus características (como pueden ser la acidez, densidad...). Tendrás que generar, entrenar, validar y testear modelos tanto de clasificación como de regresión.
 
 El dataset proviene de la Universdad de Minho, generado por [P. Cortez](http://www3.dsi.uminho.pt/pcortez/Home.html) et al. Dicho dataset se encuentra en el [*UC Irvine Machine Learning Repository*](https://archive.ics.uci.edu/ml/index.html) ([aquí](https://archive.ics.uci.edu/ml/datasets/Wine+Quality) está disponible; pero debes usar la versión adjunta en la misma carpeta que este documento). Adjunto la descripción del dataset:
