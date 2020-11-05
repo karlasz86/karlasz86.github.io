@@ -37,7 +37,7 @@ driver_chrome.implicitly_wait(20)
 Creas unas listas vacías de las características que quieres analizar, en mi caso: precios, características(número de habitaciones, baños, etc.), direcciones y descripciones
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/WebScraping/WebScraping/Scraping1.PNG">
+<img src="{{ site.url }}{{ site.baseurl }}/images/WebScraping/Scraping1.png">
 
 ```python
 prices=[] #List to store price of the apartment
@@ -59,7 +59,7 @@ Y luego dentro del contenedor, tenemos que detectar dónde están las caracterí
    <li> **Descripciones**: Ubicado bajo el tag "span" y la clase "re-Card-description </li>
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/WebScraping/Scraping3.PNG">
+<img src="{{ site.url }}{{ site.baseurl }}/images/WebScraping/Scraping3.png">
 
 Llamo a mi url con Selenium y con Beautiful Soup convierto este código de la página en algo más "comestible". Hago un bucle "for" ya que quiero analizar no solo la primer página, sino las primeras 31 páginas. ¿Y cómo encuentro mi contenedor? Podemos utilizar find(). Para evitar que mi scraping se detenga por si se encuentra con un contenedor vacío, le indico que si se encuentra con un "None", continúe.
 
