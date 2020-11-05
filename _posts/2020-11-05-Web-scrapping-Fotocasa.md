@@ -50,7 +50,7 @@ Lo primero que hay que hacer antes de empezar con esto, es inspeccionar la pági
 
 Por ejemplo, detectamos que el contenedor que contiene toda la información de los pisos es "re-Searchresult-itemrow", que está dentro de un tag <div>
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/WebScraping/WebScraping/Scraping2.PNG">
+<img src="{{ site.url }}{{ site.baseurl }}/images/WebScraping/Scraping2.PNG">
 
 Y luego dentro del contenedor, tenemos que detectar dónde están las características del piso que queremos analizar, y en qué contenedores están, con el inspector es sencillo porque mientras vas apuntando al código, la página se marca sobre la parte que apuntamos:
    <li> **Precio**: Ubicado bajo el tag "span> y la clase "re-Card-Price" </li>
@@ -59,7 +59,7 @@ Y luego dentro del contenedor, tenemos que detectar dónde están las caracterí
    <li> **Descripciones**: Ubicado bajo el tag "span" y la clase "re-Card-description </li>
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/WebScraping/WebScraping/Scraping3.PNG">
+<img src="{{ site.url }}{{ site.baseurl }}/images/WebScraping/Scraping3.PNG">
 
 Llamo a mi url con Selenium y con Beautiful Soup convierto este código de la página en algo más "comestible". Hago un bucle "for" ya que quiero analizar no solo la primer página, sino las primeras 31 páginas. ¿Y cómo encuentro mi contenedor? Podemos utilizar find(). Para evitar que mi scraping se detenga por si se encuentra con un contenedor vacío, le indico que si se encuentra con un "None", continúe.
 
