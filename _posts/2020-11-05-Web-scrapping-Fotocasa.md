@@ -37,7 +37,7 @@ driver_chrome.implicitly_wait(20)
 Creas unas listas vacías de las características que quieres analizar, en mi caso: precios, características(número de habitaciones, baños, etc.), direcciones y descripciones
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/WebScraping/Scraping1.png">
+<img src="karlasz86.github.io/images/WebScraping">
 
 ```python
 prices=[] #List to store price of the apartment
