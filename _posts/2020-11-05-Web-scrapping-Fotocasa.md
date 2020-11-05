@@ -36,7 +36,7 @@ driver_chrome.implicitly_wait(20)
 
 Creas unas listas vacías de las características que quieres analizar, en mi caso: precios, características(número de habitaciones, baños, etc.), direcciones y descripciones
 
-<img src="karlasz86.github.io/images/WebScraping/Scraping1.PNG">
+<img src="/images/WebScraping/Scraping1.PNG">
 
 
 ```python
