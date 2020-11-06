@@ -5,4 +5,4 @@ header:
   image: "/images/zakim.jpg"
 ---
 
-I’m an apsiring data scientist, experienced with Python and R programming. I specialize in machine learning techniques, and data wrangling. I love working on projects together, so feel free to reach out for collaboration!
+I am a professional with more tan 10 years of experience in Marketing and Communications. I love challenges and constant learning, that's why a few years ago I started my path to become a Data Scientist. I did a Master in Big Data & Analytics and I am looking for new profesional challenges.
