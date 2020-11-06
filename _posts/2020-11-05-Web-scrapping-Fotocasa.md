@@ -56,9 +56,9 @@ Por ejemplo, detectamos que el contenedor que contiene toda la información de l
 
 Y luego dentro del contenedor, tenemos que detectar dónde están las características del piso que queremos analizar, y en qué contenedores están, con el inspector es sencillo porque mientras vas apuntando al código, la página se marca sobre la parte que apuntamos:
    <li><strong>Precio</strong>: Ubicado bajo el tag "span> y la clase "re-Card-Price" </li>
-   <li> **Características**: Ubicado bajo el tag "div" y la clase "re-CardFeatures-wrapper" </li>
-   <li> **Direcciones**: Ubicado bajo el tag "h3" y la clase "re-Card-title" </li>
-   <li> **Descripciones**: Ubicado bajo el tag "span" y la clase "re-Card-description </li>
+   <li><strong>Características</strong>: Ubicado bajo el tag "div" y la clase "re-CardFeatures-wrapper" </li>
+   <li><strong>Direcciones</strong>: Ubicado bajo el tag "h3" y la clase "re-Card-title" </li>
+   <li><strong>Descripciones</strong> Ubicado bajo el tag "span" y la clase "re-Card-description </li>
 
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/WebScraping/Scraping3.PNG">
@@ -1231,7 +1231,7 @@ final_result.head()
 
 
 
-# Cuarta parte
+# Quinta parte
 
 Y ahora, ¡manos a la obra!, ¿qué es lo que queremos averiguar de estos datos? Tenemos: Precio, número de habitaciones, número de baños, si tiene o no ascensor, si tiene o no plaza de garaje si es estudio o piso completo (aunque eso lo podemos deducir también con el número de habitaciones) y el barrio al que pertenece el piso
 
@@ -1264,11 +1264,11 @@ final_result.info()
 
 Con la función describe podemos obteher un resumen estadístico de la distribución de nuestras features numéricas.
 
-Por ejemplo, por sacar datos que puedan interesarnos:
-    <li>La media de número de habitaciones es 2. Siendo el mínimo 0 habitaciones (estudios) y el máximo 4.</li>
-    <li>La media de número de baños es 1, siendo el mínimo 1 y el máximo 3.</li>
-    <li>En promedio el área ronda los 78 metros. El área mínima es 25 metros y la máxima 200</li>
-    <li>El precio mínimo es 550€ y el máximo 5000€</li>
+Por ejemplo, por sacar <strong>datos que puedan interesarnos</strong>:
+<li>La media de número de habitaciones es 2. Siendo el mínimo 0 habitaciones (estudios) y el máximo 4.</li>
+<li>La media de número de baños es 1, siendo el mínimo 1 y el máximo 3.</li>
+<li>En promedio el área ronda los 78 metros. El área mínima es 25 metros y la máxima 200</li>
+<li>El precio mínimo es 550€ y el máximo 5000€</li>
 
 
 ```python
@@ -1436,7 +1436,7 @@ plt.show()
 ```
 
 
-![png](output_102_0.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/WebScraping/output_102_0.png">
 
 
 De las gráficas anteriores podemos detectar que hay algunos outliers, sobre todo en los precios, y podemos verlo mejor con un diagrama de cajas, ya luego nos adentraremos más en la base de datos para saber las características de los pisos con estos precios que se alejan mucho del grueso de nuestras propiedades.
@@ -1453,9 +1453,7 @@ final_result['Price'].plot(kind="box",
     <matplotlib.axes._subplots.AxesSubplot at 0x2ea240523c8>
 
 
-
-
-![png](output_104_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/WebScraping/output_104_1.png">
 
 
 Ahora, porque es importante para mi análisis, quiero averiguar de todo mi conjunto de datos, qué número de habitaciones es el más común. Eso podemos averiguarlo con una operación sencilla utilizando counts() y dividiendo entre el número de filas de nuestro dataframe. Como ya habíamos visto en la gráfica anterior, hay más pisos de 2 habitaciones, pero porcentualmente ¿cómo se divide esto? 
@@ -1463,6 +1461,7 @@ Ahora, porque es importante para mi análisis, quiero averiguar de todo mi conju
 <li>2 habitaciones: 33%</li>
 <li>3 habitaciones: 28%</li>
 <li>1 habitación: 25%</li>
+
 
 Y los "raros" son los estudios y los pisos de 4 habitaciones. Podemos encontrar una oportunidad en los pisos de 4 habitaciones, así por ejemplo, si tenemos un piso a un precio que esté dentro de la media y con una buena decoración, podemos ser más firmes a la hora de la negociación con nuestro potencial inquilino (previo averiguar las características de la competencia): no hay tantos pisos de 4 habitaciones y si son 4 amigos buscando piso, no les va a encajar un piso de 3 así esté tirado de precio. Por supuesto habrá que analizar también otros factores, así como hay pocos pisos disponibles con 4 habitaciones, ¿hay también una baja demanda de este tipo de inmuebles?
 
