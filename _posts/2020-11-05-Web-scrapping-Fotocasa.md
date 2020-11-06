@@ -133,18 +133,18 @@ Ahora que hemos obtenido los datos de los pisos, vamos a abrir el csv que acabam
 
 ```python
 import csv
-path="C:/Users/ksalg/Curso Python Datahack/"
-df_pisos=pd.read_csv(path+'precios_varios_scraping_3.csv')
+path="C:/Users/ksalg/MiCarpeta/"
+df_pisos=pd.read_csv(path+'precios_pisos_scraping_1.csv')
 ```
 
 
 ```python
-df_pisos_2=pd.read_csv(path+'precios_pisos_madrid_2.csv')
-df_pisos_3=pd.read_csv(path+'precios_pisos_madrid.csv')
-df_pisos_4=pd.read_csv(path+'precios_fotocasa_test.csv')
-df_pisos_5=pd.read_csv(path+'precios_varios_scraps.csv')
-df_pisos_6=pd.read_csv(path+'precios_varios_scraping.csv')
-df_pisos_7=pd.read_csv(path+'precios_varios_scraping_2.csv')
+df_pisos_2=pd.read_csv(path+'precios_pisos_scraping_2.csv')
+df_pisos_3=pd.read_csv(path+'precios_pisos_scraping_3.csv')
+df_pisos_4=pd.read_csv(path+'precios_pisos_scraping_4.csv')
+df_pisos_5=pd.read_csv(path+'precios_pisos_scraping_5.csv')
+df_pisos_6=pd.read_csv(path+'precios_pisos_scraping_6.csv')
+df_pisos_7=pd.read_csv(path+'precios_pisos_scraping_7.csv')
 
 ```
 
