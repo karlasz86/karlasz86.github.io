@@ -1,6 +1,7 @@
-Vamos a hacer un web scraping del portal de pisos Fotocasa con Beautiful Soup y Selenium, que son unas librerías de Python muy amigables y sencillas de utilizar y además limpieza de datos con Pandas y análisis con la librería Matplotlib. Este ejercicio se puede repetir no solo en páginas de búsquedas de pisos, sino en páginas de distintos comercios, ya sea porque queremos analizar los datos para hacer una compra (o alquiler) inteligente, como para utilizarlos en alguna decisión de nuestro negocio.
+Vamos a hacer un web scraping de un portal de alquiler de pisos con Beautiful Soup y Selenium, que son unas librerías de Python muy amigables y sencillas de utilizar y además limpieza de datos con Pandas y análisis con la librería Matplotlib. Este ejercicio se puede repetir no solo en páginas de búsquedas de pisos, sino en páginas de distintos comercios, ya sea porque queremos analizar los datos para hacer una compra (o alquiler) inteligente, como para utilizarlos en alguna decisión de nuestro negocio.
 
 Necesitarás conocimientos básicos de HTML y Python, y tener una idea de lo que es el web scraping.
+
 
 
 ```python
@@ -36,7 +37,9 @@ driver_chrome = webdriver.Chrome(executable_path="C:/Users/ksalg/Curso Python Da
 driver_chrome.implicitly_wait(20)
 ```
 
-Creas unas listas vacías de las características que quieres analizar, en mi caso: precios, características(número de habitaciones, baños, etc.), direcciones y descripciones
+Elegí el portal Fotocasa para hacer el análisis porque tiene datos interesantes en las descripciones de los previews de los pisos y porque también da para hacer un ejercicio de limpieza de datos, algo con lo que seguramente te cruzarás mucho a la hora de hacer análisis.
+
+Primero, hay que crear unas listas vacías de las características que quieres analizar, en mi caso: precios, características(número de habitaciones, baños, etc.), direcciones y descripciones
 
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/WebScraping/Scraping1.PNG">
@@ -67,7 +70,7 @@ Llamo a mi url con Selenium y con Beautiful Soup convierto este código de la p�
 
 Llegado a este punto identifiqué 2 problemas, el primero, que tienen un buen detector de spiders, y la página detecta que hay algo que no es normal, a pesar de mis esfuerzos por hacer pausas (con sleep por ejemplo para que tarde entre 1 y 3 segundo en pasar de una página a otra). Así que tengo que hacer el CAPCHA me guste o no.
 
-El segundo problema es que la el contenedor 're-Searchresult-itemRow' que es el que tiene toda la información de cada propiedad, tiene un stopper, a partir de la cuarta propiedad de cada página, solo cuando que dado scroll down y me he mantenido algunos segundo, la información del contenedor aparece. Para no dilatar más el proceso y habiendo detectado que hay muchísimas propiedades duplicas, lo que hice fue hacer web scraping de las primeras 31 páginas durante 5 días consecutivos. No es una página fácil de scrapear, hay otras más sencillas, pero la data que tiene sin tener que entrar a cada propiedad es muy rica y se puede aprovechar mucho.
+Una vez que he dectectado las imágenes del CAPCHA, el segundo problema es que la el contenedor 're-Searchresult-itemRow' que es el que tiene toda la información de cada propiedad, tiene un stopper, a partir de la cuarta propiedad de cada página, solo cuando he dado scroll down y me he mantenido algunos segundos, la información del contenedor aparece. Para no dilatar más el proceso y habiendo detectado que hay muchísimas propiedades duplicas, lo que hice fue hacer web scraping de las primeras 31 páginas durante 5 días consecutivos. No es una página fácil de scrapear por este motivo, hay otras más sencillas, pero como comenté, la data que tiene sin tener que entrar a cada propiedad es muy rica y se puede aprovechar mucho.
 
 
 ```python
@@ -123,7 +126,7 @@ Guardé cada base en un archivo csv con distinto nombre
 
 
 ```python
-df_apt.to_csv('precios_varios_scraping_3.csv', index=False, encoding='utf-8')
+df_apt.to_csv('precios_varios_scraping_1.csv', index=False, encoding='utf-8')
 ```
 
 # Segunda parte: Duplicados y guardar mi dataframe
