@@ -1,8 +1,5 @@
 Vamos a hacer un web scraping de un portal de alquiler de pisos con Beautiful Soup y Selenium, que son unas librerías de Python muy amigables y sencillas de utilizar y además limpieza de datos con Pandas y análisis con la librería Matplotlib. Este ejercicio se puede repetir no solo en páginas de búsquedas de pisos, sino en páginas de distintos comercios, ya sea porque queremos analizar los datos para hacer una compra (o alquiler) inteligente, como para utilizarlos en alguna decisión de nuestro negocio.
 
-Necesitarás conocimientos básicos de HTML y Python, y tener una idea de lo que es el web scraping.
-
-
 
 ```python
 from selenium import webdriver
@@ -11,11 +8,12 @@ from selenium.webdriver.common.action_chains import ActionChains #al final esta 
 from bs4 import BeautifulSoup
 import pandas as pd
 import requests # for making standard html requests
-import re
 from random import randint
 import time
 ```
+# Primera parte: ¿por dónde empiezo y qué necesito?
 
+Necesitarás conocimientos básicos de HTML y Python, y tener una idea de lo que es el web scraping.
 Recuerda que si no tienes instalada alguna de estas librerías, puedes hacerlo desde el mismo jupyter notebook. En mi caso no tenía instalado web_drive manager de Selenium, que me servirá para abrir la página que quiero "scrapear", intentando imitar a cómo lo haría un ser humano.
 
 
