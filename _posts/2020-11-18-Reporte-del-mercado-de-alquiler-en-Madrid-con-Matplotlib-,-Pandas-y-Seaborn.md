@@ -166,10 +166,11 @@ housing.info()
     
 
 Con la función describe(), obtenemos un resumen estadístico de la distribución de nuestras características numéricas. Por ejemplo, por sacar datos que puedan interesarnos para este reporte:
-    <li>La media de <strong>número de habitaciones</strong> es 2. Siendo el mínimo 0 habitaciones (estudios) y el máximo 4.</li>
-    <li>La media de número de baños es 1, siendo el mínimo 1 y el máximo 3.</li>
-    <li>En promedio <strong>el área de los pisos ronda sobre los 78 metros</strong>. El área mínima es 25 metros y la máxima 200</li>
-    <li>El precio mínimo es 550€ y el máximo 5000€</li>
+
+<li>La media de <strong>número de habitaciones</strong> es 2. Siendo el mínimo 0 habitaciones (estudios) y el máximo 4.</li>
+<li>La media de número de baños es 1, siendo el mínimo 1 y el máximo 3.</li>
+<li>En promedio <strong>el área de los pisos ronda sobre los 78 metros</strong>. El área mínima es 25 metros y la máxima 200</li>
+<li>El precio mínimo es 550€ y el máximo 5000€</li>
 
 
 ```python
