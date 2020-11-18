@@ -2,7 +2,7 @@
 
 ¿Te ha pasado que te piden un análisis y no quieres presentar algo hecho con los gráficos de Excel, pero tampoco tienes a mano un programa de visualización de datos por falta de presupuesto en el trabajo?
 
-Si bien lo importante es el análisis, la forma en la que presentamos los datos también es importante. Por eso te mostraré un ejemplo de análisis que hice con las librerías <strong>Pandas, <a href="https://seaborn.pydata.org/>Seaborn</a> y <a href="https://matplotlib.org/">Matplotlib</a></strong>.
+Si bien lo importante es el análisis, la forma en la que presentamos los datos también es importante. Por eso te mostraré un ejemplo de análisis que hice con las librerías <strong>Pandas, <a href="https://seaborn.pydata.org/">Seaborn</a> y <a href="https://matplotlib.org/">Matplotlib</a></strong>.
 
 Recuerda que para elegir los gráficos tienes que tener en cuenta no solo los datos con los que cuentas, sino lo que quieres transmitir y a quién se lo vas a transmitir (no es lo mismo el/la encargado/a de Ventas que el/la Gerente de Operaciones)
 
@@ -1843,6 +1843,5 @@ sns.catplot(x="NB", y="SquareMeter", kind="box", data=one_bedroom_terrace)
 <li>Sin tomar en cuenta valores atípicos, los precios en estos barrios van desde los 12€/m2(estudios) hasta los 26€/m2.</li>
 
 ### ¿Qué precio podría tener mi piso de 1 habitación?
-Un dato que debemos tomar en cuenta es que hay una alta oferta de pisos en alquiler. Según datos de Idealista, <a href= "https://www.idealista.com/news/inmobiliario/vivienda/2020/10/19/787538-la-oferta-de-viviendas-en-alquiler-en-espana-se-dispara-un-63-desde-el-inicio-de-la" 
->la cartera de pisos en alquiler en España se disparó en un 63% desde el inicio de la pandemia</a>. Así que tomando esto en cuenta, en que finalmente es un piso con una habitación y no estudio, que no tiene ascensor y en la oferta encontrada en la zona, el precio de nuestro pios podría oscilar entre los 525€ (15€/m2) y 700€ (20€/m2).
+Un dato que debemos tomar en cuenta es que hay una alta oferta de pisos en alquiler. Según datos de Idealista, <a href= "https://www.idealista.com/news/inmobiliario/vivienda/2020/10/19/787538-la-oferta-de-viviendas-en-alquiler-en-espana-se-dispara-un-63-desde-el-inicio-de-la">la cartera de pisos en alquiler en España se disparó en un 63% desde el inicio de la pandemia</a>. Así que tomando esto en cuenta, en que finalmente es un piso con una habitación y no estudio, que no tiene ascensor y en la oferta encontrada en la zona, el precio de nuestro pios podría oscilar entre los 525€ (15€/m2) y 700€ (20€/m2).
 
