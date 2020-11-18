@@ -2,7 +2,7 @@
 
 ¿Te ha pasado que te piden un análisis y no quieres presentar algo hecho con los gráficos de Excel, pero tampoco tienes a mano un programa de visualización de datos por falta de presupuesto en el trabajo?
 
-Si bien lo importante es el análisis, la forma en la que presentamos los datos también es importante. Por eso te mostraré un ejemplo de análisis que hice con las librerías <strong>Pandas, Seaborn y Matplotlib</strong>.
+Si bien lo importante es el análisis, la forma en la que presentamos los datos también es importante. Por eso te mostraré un ejemplo de análisis que hice con las librerías <strong>Pandas, <a href="https://seaborn.pydata.org/>Seaborn</a> y <a href="https://matplotlib.org/">Matplotlib</a></strong>.
 
 Recuerda que para elegir los gráficos tienes que tener en cuenta no solo los datos con los que cuentas, sino lo que quieres transmitir y a quién se lo vas a transmitir (no es lo mismo el/la encargado/a de Ventas que el/la Gerente de Operaciones)
 
@@ -330,8 +330,7 @@ housing.hist(bins=50, figsize=(20,15))
 plt.show()
 ```
 
-
-![png](output_12_0.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/AnalisisDatosInmobiliario/output_12_0.png">
 
 
 ## Analizando outliers
@@ -351,8 +350,7 @@ housing['Price'].plot(kind="box",
 
 
 
-
-![png](output_15_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/AnalisisDatosInmobiliario/output_15_1.png">
 
 
 
@@ -870,8 +868,7 @@ housing['SquareMeter'].plot(kind="box",
 
 
 
-
-![png](output_26_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/AnalisisDatosInmobiliario/output_26_1.png">
 
 
 
@@ -1028,9 +1025,7 @@ sns.catplot(x="Rooms", kind="count", palette="ch:start=.2,rot=-.3", data=housing
     <seaborn.axisgrid.FacetGrid at 0x14bc165ea08>
 
 
-
-
-![png](output_37_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/AnalisisDatosInmobiliario/output_37_1.png">
 
 
 ## Pisos de 1 habitación y estudios en el Viso
@@ -1317,8 +1312,7 @@ one_bedroom.hist(bins=50, figsize=(20,15))
 plt.show()
 ```
 
-
-![png](output_46_0.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/AnalisisDatosInmobiliario/output_46_0.png">
 
 
 Por eso, vamos a agrupar los datos en barrios
@@ -1354,8 +1348,8 @@ sns.catplot(x="NB", kind="count", palette="ch:start=.2,rot=-.3", data=one_bedroo
 
 
 
+<img src="{{ site.url }}{{ site.baseurl }}/images/AnalisisDatosInmobiliario/output_50_1.png">
 
-![png](output_50_1.png)
 
 
 Si miramos las áreas por barrio, detectamos que:
@@ -1375,9 +1369,7 @@ sns.catplot(x="NB", y="Area", kind="box", data=one_bedroom)
     <seaborn.axisgrid.FacetGrid at 0x14bc1e18188>
 
 
-
-
-![png](output_52_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/AnalisisDatosInmobiliario/output_52_1.png">
 
 
 Si hacemos lo mismo con los precios por barrio, podemos apreciar la gran diferencia de precios que tienen los barrios del Retiro y Salamanca, mientras que, salvo valores atípicos, Chamberí y Chamartín tiene un rango más acotado de precios.
@@ -1394,8 +1386,7 @@ sns.catplot(x="NB", y="Price", kind="box", data=one_bedroom)
 
 
 
-
-![png](output_54_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/AnalisisDatosInmobiliario/output_54_1.png">
 
 
 Y ¿qué pasa con el precio por metro cuadrado? Aquí podemos encontrar un poco más de sentido que en los precios al ser una medida que une el precio y el área de los pisos. En cada barrio es distinto, pero los precios van desde los 12€/m2 hasta los 26€/m2.
@@ -1412,8 +1403,7 @@ sns.catplot(x="NB", y="SquareMeter", kind="box", data=one_bedroom)
 
 
 
-
-![png](output_56_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/AnalisisDatosInmobiliario/output_56_1.png">ng)
 
 
 El piso al que queremos corroborar el precio, es interior y no tiene terraza, tiene 35 m2, 1 habitación, 1 baño, no tiene parking, el precio por metro cuadrado es 22,85€ y está ubicado en el barrio de Chamartín. Así que vamos a compararlo con pisos de 1 habitación o estudios sin terraza en los barrios ya mencionados.
@@ -1678,9 +1668,7 @@ sns.catplot(x="NB", y="SquareMeter", kind="box", data=one_bedroom_no_terrace)
     <seaborn.axisgrid.FacetGrid at 0x14bc158c708>
 
 
-
-
-![png](output_61_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/AnalisisDatosInmobiliario/output_61_1.png">
 
 
 Haremos lo mismo con los pisos con terraza
@@ -1845,9 +1833,7 @@ sns.catplot(x="NB", y="SquareMeter", kind="box", data=one_bedroom_terrace)
     <seaborn.axisgrid.FacetGrid at 0x14bc36abd08>
 
 
-
-
-![png](output_65_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/AnalisisDatosInmobiliario/output_65_1.png">
 
 
 ## Repasando lo que encontramos
@@ -1860,5 +1846,6 @@ sns.catplot(x="NB", y="SquareMeter", kind="box", data=one_bedroom_terrace)
 <li>Sin tomar en cuenta valores atípicos, los precios en estos barrios van desde los 12€/m2(estudios) hasta los 26€/m2.</li>
 
 ### ¿Qué precio podría tener mi piso de 1 habitación?
-Un dato que debemos tomar en cuenta es que hay una alta oferta de pisos en alquiler. Según datos de Idealists, la cartera de pisos en alquiler en España ha aumentado en un 63%. Así que tomando esto en cuenta, en que finalmente es un piso con una habitación y no estudio, que no tiene ascensor y en la oferta encontrada en la zona, el precio de nuestro pios podría oscilar entre los 525€ (15€/m2) y 700€ (20€/m2).
+Un dato que debemos tomar en cuenta es que hay una alta oferta de pisos en alquiler. Según datos de Idealista, <a href= "https://www.idealista.com/news/inmobiliario/vivienda/2020/10/19/787538-la-oferta-de-viviendas-en-alquiler-en-espana-se-dispara-un-63-desde-el-inicio-de-la" 
+>la cartera de pisos en alquiler en España se disparó en un 63% desde el inicio de la pandemia</a>. Así que tomando esto en cuenta, en que finalmente es un piso con una habitación y no estudio, que no tiene ascensor y en la oferta encontrada en la zona, el precio de nuestro pios podría oscilar entre los 525€ (15€/m2) y 700€ (20€/m2).
 
