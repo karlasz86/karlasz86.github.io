@@ -330,7 +330,7 @@ housing.hist(bins=50, figsize=(20,15))
 plt.show()
 ```
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/AnalisisDatosInmobiliario/output_12_0.png">
+<img src="{{ site.url }}{{ site.baseurl }}/images/AnalisDatosInmobiliario/output_12_0.png">
 
 
 ## Analizando outliers
@@ -350,7 +350,7 @@ housing['Price'].plot(kind="box",
 
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/AnalisisDatosInmobiliario/output_15_1.png">
+<img src="{{ site.url }}{{ site.baseurl }}/images/AnalisDatosInmobiliario/output_15_1.png">
 
 
 
@@ -867,8 +867,7 @@ housing['SquareMeter'].plot(kind="box",
     <matplotlib.axes._subplots.AxesSubplot at 0x14bc1787ac8>
 
 
-
-<img src="{{ site.url }}{{ site.baseurl }}/images/AnalisisDatosInmobiliario/output_26_1.png">
+<img src="{{ site.url }}{{ site.baseurl }}/images/AnalisDatosInmobiliario/output_26_1.png">
 
 
 
@@ -1025,7 +1024,7 @@ sns.catplot(x="Rooms", kind="count", palette="ch:start=.2,rot=-.3", data=housing
     <seaborn.axisgrid.FacetGrid at 0x14bc165ea08>
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/AnalisisDatosInmobiliario/output_37_1.png">
+<img src="{{ site.url }}{{ site.baseurl }}/images/AnalisDatosInmobiliario/output_37_1.png">
 
 
 ## Pisos de 1 habitación y estudios en el Viso
@@ -1312,7 +1311,7 @@ one_bedroom.hist(bins=50, figsize=(20,15))
 plt.show()
 ```
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/AnalisisDatosInmobiliario/output_46_0.png">
+<img src="{{ site.url }}{{ site.baseurl }}/images/AnalisDatosInmobiliario/output_46_0.png">
 
 
 Por eso, vamos a agrupar los datos en barrios
@@ -1347,8 +1346,7 @@ sns.catplot(x="NB", kind="count", palette="ch:start=.2,rot=-.3", data=one_bedroo
     <seaborn.axisgrid.FacetGrid at 0x14bc14ae188>
 
 
-
-<img src="{{ site.url }}{{ site.baseurl }}/images/AnalisisDatosInmobiliario/output_50_1.png">
+<img src="{{ site.url }}{{ site.baseurl }}/images/AnalisDatosInmobiliario/output_50_1.png">
 
 
 
@@ -1369,7 +1367,7 @@ sns.catplot(x="NB", y="Area", kind="box", data=one_bedroom)
     <seaborn.axisgrid.FacetGrid at 0x14bc1e18188>
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/AnalisisDatosInmobiliario/output_52_1.png">
+<img src="{{ site.url }}{{ site.baseurl }}/images/AnalisDatosInmobiliario/output_52_1.png">
 
 
 Si hacemos lo mismo con los precios por barrio, podemos apreciar la gran diferencia de precios que tienen los barrios del Retiro y Salamanca, mientras que, salvo valores atípicos, Chamberí y Chamartín tiene un rango más acotado de precios.
@@ -1402,8 +1400,7 @@ sns.catplot(x="NB", y="SquareMeter", kind="box", data=one_bedroom)
     <seaborn.axisgrid.FacetGrid at 0x14bc16d0848>
 
 
-
-<img src="{{ site.url }}{{ site.baseurl }}/images/AnalisisDatosInmobiliario/output_56_1.png">ng)
+<img src="{{ site.url }}{{ site.baseurl }}/images/AnalisDatosInmobiliario/output_56_1.png">ng)
 
 
 El piso al que queremos corroborar el precio, es interior y no tiene terraza, tiene 35 m2, 1 habitación, 1 baño, no tiene parking, el precio por metro cuadrado es 22,85€ y está ubicado en el barrio de Chamartín. Así que vamos a compararlo con pisos de 1 habitación o estudios sin terraza en los barrios ya mencionados.
@@ -1668,7 +1665,7 @@ sns.catplot(x="NB", y="SquareMeter", kind="box", data=one_bedroom_no_terrace)
     <seaborn.axisgrid.FacetGrid at 0x14bc158c708>
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/AnalisisDatosInmobiliario/output_61_1.png">
+<img src="{{ site.url }}{{ site.baseurl }}/images/AnalisDatosInmobiliario/output_61_1.png">
 
 
 Haremos lo mismo con los pisos con terraza
@@ -1833,7 +1830,7 @@ sns.catplot(x="NB", y="SquareMeter", kind="box", data=one_bedroom_terrace)
     <seaborn.axisgrid.FacetGrid at 0x14bc36abd08>
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/AnalisisDatosInmobiliario/output_65_1.png">
+<img src="{{ site.url }}{{ site.baseurl }}/images/AnalisDatosInmobiliario/output_65_1.png">
 
 
 ## Repasando lo que encontramos
