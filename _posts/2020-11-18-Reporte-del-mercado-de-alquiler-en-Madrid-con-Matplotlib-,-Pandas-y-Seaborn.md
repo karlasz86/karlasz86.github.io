@@ -17,7 +17,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 ```
 
-Tenemos una base de datos de 122 pisos obtenidos del portal Fotocasa, todos ubicados en el Municipio de Madrid y amueblados, con descripción, precio, número de baños, si tiene o no ascensor, garaje o terraza (0 es NO, 1 es SÍ), el barrio y el precio medio por metro cuadrado. En un post anterior explico cómo conseguí los datos.
+Tenemos una base de datos de 122 pisos obtenidos del portal Fotocasa, todos ubicados en el Municipio de Madrid y amueblados, con descripción, precio, número de baños, si tiene o no ascensor, garaje o terraza (0 es NO, 1 es SÍ), el barrio y el precio medio por metro cuadrado. <a href="https://karlasz86.github.io/Web-scrapping-con-Selenium-yBeautiful-Soup-y-limpieza-y-an%C3%A1lisis-de-datos-con-Pandas/">En un post anterior explico cómo conseguí los datos</a>.
 
 
 ```python
